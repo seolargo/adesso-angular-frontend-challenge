@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <input 
+        type="checkbox" 
+        id="{{id}}"
+        class="checkbox_input"
+        (click)="clicked(label)"
+    >
+    <label 
+        for="{{id}}"
+        class="checkbox_label"
+    >
+        {{ label }}
+    </label>
+</div>
+
+<div class="slider_container">
+    <input 
+        #ref 
+        (change)="changeRadioValue(ref.value)" 
+        type="range" 
+        min="0" 
+        max="200" 
+        value="0" 
+        class="slider" 
+        [disabled]="disabled"
+    >
+</div>
+<span>{{rangeValue}}</span>
+<br>

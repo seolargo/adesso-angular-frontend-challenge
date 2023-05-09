@@ -1,0 +1,54 @@
+<h1 class="d-flex align-items-center justify-content-center px-4 py-3 units-title">Units Page</h1>
+<div class="d-flex flex-column mb-3">
+    <div class="px-4 py-3">
+        <h2>Ages</h2>
+        <div 
+            class="btn-group" 
+            role="group" 
+            aria-label="Basic radio toggle button group"
+        >
+            <app-ages-button 
+                [buttonName]="'All'" 
+                [id]="'btnradio1'"
+            ></app-ages-button>
+            <app-ages-button 
+                [buttonName]="'Dark'" 
+                [id]="'btnradio2'"
+            ></app-ages-button>
+            <app-ages-button 
+                [buttonName]="'Feudal'" 
+                [id]="'btnradio3'"
+            ></app-ages-button>
+            <app-ages-button 
+                [buttonName]="'Castle'" 
+                [id]="'btnradio4'"
+            ></app-ages-button>
+            <app-ages-button 
+                [buttonName]="'Imperial'" 
+                [id]="'btnradio5'"
+            ></app-ages-button>
+        </div>
+    </div>
+    <div class="px-4 py-3">
+        <h2>Costs</h2>
+        <app-costs-filter
+            [label]="'Wood'"
+            [rangeValue]="'0-200'"
+            [id]="1"
+        >
+        </app-costs-filter>
+        <app-costs-filter
+            [label]="'Food'"
+            [rangeValue]="'0-200'"
+            [id]="2"
+        >
+        </app-costs-filter>
+        <app-costs-filter
+            [label]="'Gold'"
+            [rangeValue]="'0-200'"
+            [id]="3"
+        >
+        </app-costs-filter>
+    </div>
+    <app-table></app-table>
+</div>

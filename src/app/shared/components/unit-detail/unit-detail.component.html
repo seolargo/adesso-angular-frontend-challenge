@@ -1,0 +1,55 @@
+<h1 class="d-flex align-items-center justify-content-center px-4 py-3 unit_detail_page_header">Unit Detail Page</h1>
+<div class="d-flex align-items-center justify-content-center px-4 py-3">
+    <table class="table">
+        <tbody>
+        <tr>
+            <th scope="row">ID:</th>
+            <td>{{detailedUnit.id}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Name:</th>
+            <td>{{detailedUnit.name}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Description:</th>
+            <td colspan="2">{{detailedUnit.description}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Min. Required Age:</th>
+            <td colspan="2">{{detailedUnit.age}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Wood Cost:</th>
+            <td colspan="2">{{detailedUnit.cost?.Wood}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Food Cost:</th>
+            <td colspan="2">{{detailedUnit.cost?.Food}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Gold Cost:</th>
+            <td colspan="2">{{detailedUnit.cost?.Gold}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Build Time:</th>
+            <td colspan="2">{{detailedUnit.build_time}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Reload Time:</th>
+            <td colspan="2">{{detailedUnit.reload_time}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Hit Points:</th>
+            <td colspan="2">{{detailedUnit.hit_points}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Attack:</th>
+            <td colspan="2">{{detailedUnit.attack}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Accuracy:</th>
+            <td colspan="2">{{detailedUnit.accuracy}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

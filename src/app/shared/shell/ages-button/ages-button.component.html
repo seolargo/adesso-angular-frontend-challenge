@@ -1,0 +1,15 @@
+<input 
+    (input)="onInput(buttonName)" 
+    type="radio" 
+    class="btn-check" 
+    name="btnradio" 
+    id={{id}} 
+    autocomplete="off" 
+    [checked]="id === 'btnradio1'"
+>
+<label 
+    class="btn btn-outline-primary" 
+    for={{id}}
+>
+    {{ buttonName }}
+</label>

@@ -1,0 +1,36 @@
+<div class="px-4 py-3">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">name</th>
+                <th scope="col">age</th>
+                <th scope="col">costs</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr
+                class="cell" 
+                *ngFor="
+                    let unit of agesCostsFilteredUnits; 
+                    index as i
+                " 
+                [routerLink]="['/unit-details/', unit.id]"
+            > 
+                <th scope="row">{{unit.id}}</th>
+                <td>{{unit.name}}</td>
+                <td>{{unit.age}}</td>
+                <ng-container *ngIf="unit.cost?.Wood">
+                    <td>Wood: {{unit.cost?.Wood}}</td>
+                </ng-container>
+                <ng-container *ngIf="unit.cost?.Food">
+                    <td>Food: {{unit.cost?.Food}}</td>
+                </ng-container>
+                <ng-container *ngIf="unit.cost?.Gold">
+                    <td>Gold: {{unit.cost?.Gold}}</td>
+                </ng-container>
+            </tr>
+        </tbody>
+    </table>
+</div>
